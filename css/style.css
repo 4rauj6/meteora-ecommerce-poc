@@ -152,6 +152,29 @@ a {
     width: 80%;
 }
 
+.categories {
+    margin-top: 20px;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.categories-container p {
+    background-color: black;
+    color: white;
+}
+
+.categories h1 {
+    text-align: center;
+}
+
 @media (max-width: 450px) {
     .custom-navbar {
         background-color: transparent;
