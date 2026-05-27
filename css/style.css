@@ -340,29 +340,53 @@ a {
         height: 100%;
         padding: 20px 0;
     }
+     .custom-navbar {
+        background-color: transparent;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 15%;
+        height: 100%;
+        padding: 20px 0;
+    }
+
     .button-div {
         display: block;
         margin-left: 20px;
+        z-index: 1000;
     }
 
     .button-div button {
         border-radius: 5px;
-        background-color: white;
+        background-color: transparent;
         border: none;
         font-size: 1.7em;
         cursor: pointer;
     }
 
+    .fa-xmark {
+        color: white;
+    }
 
     .navbar-links,
     .search-box-container {
         display: none;
     }
 
+    .navbar-links {
+        position: fixed;
+        z-index: 998;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        color: black;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+    }
+
     .navbar-links ul {
         flex-direction: column;
-        margin-bottom: 50px;
-        margin-left: 25px;
     }
 
     .search-box-container label {
@@ -370,6 +394,10 @@ a {
     }
 
     .know-more {
-        display: none;
+        flex-direction: column;
+    }
+
+    .know-more-container {
+        flex-direction: column;
     }
 }
