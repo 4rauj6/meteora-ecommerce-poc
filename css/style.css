@@ -65,4 +65,76 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.label-container input[type='email'] {
+    border: solid 2px white;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    color: white;
+}
+
+.label-container input[type='submit'] {
+    border: none;
+    padding: 10px 15px;
+    background-color: purple;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.label-container input[type='submit']:hover {
+    color: purple;
+    background-color: white;
+}
+
+.label-container input[type='email']::placeholder {
+    color: white;
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        background-color: transparent;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 15%;
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .button-div {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .button-div button {
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+        font-size: 1.7em;
+        cursor: pointer;
+    }
+
+
+    .navbar-links, .search-box-container {
+        display: none;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-left: 25px;
+    }
+
+    .search-box-container label{
+        flex-direction: column;
+    }
+
+    .know-more {
+        display: none;
+    }
 }
