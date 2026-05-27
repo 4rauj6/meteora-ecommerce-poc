@@ -70,6 +70,12 @@ a {
     color: white;
     padding: 6px 9px;
     border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-box-container button:hover {
+    background-color: white;
+    color: purple;
 }
 
 .know-more {
