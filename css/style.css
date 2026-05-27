@@ -16,7 +16,7 @@ a {
     color: white;
 }
 
-.navbar {
+.custom-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,9 +25,16 @@ a {
     height: 5vh;
 }
 
+.button-div {
+    display: none;
+}
+
 .navbar-links ul {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .know-more {
@@ -96,8 +103,9 @@ a {
     color: white;
 }
 
+
 @media (max-width: 450px) {
-    .navbar {
+    .custom-navbar {
         background-color: transparent;
         flex-direction: column;
         align-items: flex-start;
@@ -120,17 +128,18 @@ a {
     }
 
 
-    .navbar-links, .search-box-container {
+    .navbar-links,
+    .search-box-container {
         display: none;
     }
 
-    .navbar-links ul{
+    .navbar-links ul {
         flex-direction: column;
         margin-bottom: 50px;
         margin-left: 25px;
     }
 
-    .search-box-container label{
+    .search-box-container label {
         flex-direction: column;
     }
 
