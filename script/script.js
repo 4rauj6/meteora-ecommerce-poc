@@ -1,13 +1,14 @@
 const openNavbarOnMobile = document.querySelector('.open-navbar-button');
-
-const navbarLinks = document.querySelector('.navbar-links');
-
+const navbarLinks = document.querySelector('.sidebar-links');
 const searchBox = document.querySelector('.search-box-container');
-const button = document.querySelector('.fa-bars');
+const icon = document.querySelector('.open-navbar-button i');
 
-openNavbarOnMobile.addEventListener('click', function () {
-    navbarLinks.classList.toggle('active');
+if (openNavbarOnMobile && icon && navbarLinks) {
+    openNavbarOnMobile.addEventListener('click', function () {
+        navbarLinks.classList.toggle('active');
+        searchBox.classList.toggle('active');
 
-    searchBox.classList.toggle('active');
-    button.classList.toggle('fa-xmark');
-});
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+}
