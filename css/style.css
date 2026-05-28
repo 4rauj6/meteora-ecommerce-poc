@@ -530,6 +530,13 @@ a {
     }
 }
 
+@media (max-width: 330px) {
+    .sidebar-links {
+        width: 100%;
+        height: 110vh;
+    }
+}
+
 @media (min-width: 992px) {
     .categories-container {
         grid-template-columns: repeat(6, 1fr);
