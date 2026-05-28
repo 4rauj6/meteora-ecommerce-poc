@@ -468,29 +468,28 @@ a {
         gap: 30px;
     }
 
-    .box {
+   .box {
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-left: 0;
+        margin-left: 20%;
         gap: 20px;
     }
 
     .title {
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .content-p {
-        width: 70%;
+        width: 50%;
     }
 
     .box img {
-        width: 20%;
+        width: 15%;
         height: auto;
         object-fit: contain;
     }
-
     body {
         margin-top: 70px;
     }
